@@ -12,11 +12,7 @@ const taskSlice = createSlice({
             const newTask = {id: Date.now(), title: action.payload, completed: false};
             state.tasks.push(newTask);
         },
-        /**
-         * @deprecated не используется, заменил на taskLoader
-         * @param state
-         * @param action
-         */
+
         loadTask(state, action) {
             state.tasks.push(action.payload);
         },

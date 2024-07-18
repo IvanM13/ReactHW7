@@ -9,7 +9,6 @@ const TaskList = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        // dispatch({type: 'USER_DATA_LOADING'});
         dispatch(tasksLoader());
     }, []);
 
